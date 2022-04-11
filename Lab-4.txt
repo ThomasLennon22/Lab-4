@@ -1,0 +1,41 @@
+using System;
+
+namespace ConsoleApp8
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("The 'If' Statement");
+            Console.WriteLine("''''''''''''''''''''");
+
+            Console.WriteLine("Enter 1st number: ");
+            int numA = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter 2nd number: ");
+            int numB = Convert.ToInt32(Console.ReadLine());
+
+            if ((numA > numB) == true) 
+            {
+                Console.WriteLine("1st number is greater than 2nd number");
+                Console.WriteLine(numA + " is greater than " + numB);
+            }
+
+            if ((numA < numB) == true)
+            {
+                Console.WriteLine("1st number is lesser than 2nd number");
+                Console.WriteLine(numA + " is lesser than " + numB);
+            }
+
+            if ((numA == numB) == true)
+            {
+                Console.WriteLine("1st number is equal to the 2nd number");
+                Console.WriteLine(numA + " is equal to " + numB);
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("'''''Thank You!''''''");
+            Console.ReadKey();
+        }
+    }
+}
